@@ -25,12 +25,13 @@ SECRET_KEY = 'django-insecure-jxr*c(o=2^7wop1(!*+0h9b)r79-0h8@8s$g)2ivva%)-^eo*-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['www.andrewmcmahon.co.uk', 'andrewmcmahon.co.uk']
+ALLOWED_HOSTS = ['www.andrewmcmahon.co.uk', 'andrewmcmahon.co.uk', '127.0.0.1']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -105,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'GMT'
 
 USE_I18N = True
 
